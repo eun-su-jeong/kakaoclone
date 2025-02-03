@@ -326,3 +326,36 @@ $site-width: 1080px;
 		background-color: #ffef6b;
 	}
 }
+
+/* 배너 1 ~ 5 */
+@mixin banner-con() {
+	display: flex;
+	height: 100%;
+
+	// 임시
+	& {
+		div:first-child {
+			width: 55%;
+			background-color: red;
+		}
+
+		div:last-child {
+			width: 45%;
+			background-color: blue;
+		}
+	}
+}
+.banner-content-type {
+	width: 100%;
+	height: 720px;
+
+	.con {
+		@include banner-con;
+		height: 100%;
+	}
+}
+
+.banner-content-between-pad {
+	height: 32px;
+	background-color: #fafafa;
+}

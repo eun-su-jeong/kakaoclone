@@ -284,4 +284,28 @@ html > body {
   background-color: #ffef6b;
 }
 
+/* 배너 1 ~ 5 */
+.banner-content-type {
+  width: 100%;
+  height: 720px;
+}
+.banner-content-type .con {
+  display: flex;
+  height: 100%;
+  height: 100%;
+}
+.banner-content-type .con div:first-child {
+  width: 55%;
+  background-color: red;
+}
+.banner-content-type .con div:last-child {
+  width: 45%;
+  background-color: blue;
+}
+
+.banner-content-between-pad {
+  height: 32px;
+  background-color: #fafafa;
+}
+
 /*# sourceMappingURL=style.css.map */
