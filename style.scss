@@ -140,7 +140,7 @@ $site-width: 1080px;
 		}
 	}
 
-	// 메가메뉴뉴
+	// 메가메뉴
 	.mega-menu {
 		display: none;
 		position: absolute;
@@ -153,7 +153,7 @@ $site-width: 1080px;
 	}
 }
 
-// 드롭다운메뉴뉴
+// 드롭다운메뉴
 .drop-down-box {
 	display: flex;
 	align-items: center;
@@ -215,7 +215,7 @@ $site-width: 1080px;
 			a {
 				display: flex;
 				align-items: center;
-				padding: 10px 24px;
+				padding: 18px 24px;
 				font-size: 13px;
 
 				&::after {
@@ -327,35 +327,104 @@ $site-width: 1080px;
 	}
 }
 
-/* 배너 1 ~ 5 */
+/* 배너 공통 디자인 */
 @mixin banner-con() {
 	display: flex;
 	height: 100%;
 
 	// 임시
 	& {
-		div:first-child {
-			width: 55%;
-			background-color: red;
-		}
+		> div {
+			position: relative;
 
-		div:last-child {
-			width: 45%;
-			background-color: blue;
+			&:first-child {
+				width: 55%;
+				// background-color: red;
+			}
+
+			&:last-child {
+				width: 45%;
+				// background-color: blue;
+			}
 		}
 	}
 }
+
+@mixin cont-text() {
+	h3 {
+		font-size: 40px;
+		font-weight: bold;
+	}
+
+	p {
+		margin-top: 24px;
+		opacity: 0.7;
+	}
+}
+
+@mixin banner-btn($width: 258px, $height: 56px) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: $width;
+	height: $height;
+	background-color: #f6f6f6;
+	color: #333;
+	border-radius: 15px;
+	gap: 0 8px;
+
+	&:hover .cont-btn-text {
+		text-decoration: underline;
+	}
+
+	.cont-btn-img {
+		img {
+			width: 6px;
+			height: 9px;
+			margin-bottom: 4.5px;
+		}
+	}
+}
+
 .banner-content-type {
 	width: 100%;
 	height: 720px;
 
-	.con {
+	> .con {
 		@include banner-con;
-		height: 100%;
 	}
 }
 
 .banner-content-between-pad {
 	height: 32px;
 	background-color: #fafafa;
+}
+
+/* 배너 1 ~ 5 */
+.banner-content-type-1 {
+	.cont-img {
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		transform: translateY(-50%);
+		img {
+			width: 473px;
+		}
+	}
+
+	.cont-box {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		.cont-text {
+			@include cont-text;
+		}
+
+		.cont-btn {
+			margin-top: 30px;
+			a {
+				@include banner-btn;
+			}
+		}
+	}
 }

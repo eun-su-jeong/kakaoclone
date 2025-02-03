@@ -186,7 +186,7 @@ html > body {
 .drop-down-box .drop-down-menu li a {
   display: flex;
   align-items: center;
-  padding: 10px 24px;
+  padding: 18px 24px;
   font-size: 13px;
 }
 .drop-down-box .drop-down-menu li a::after {
@@ -284,28 +284,74 @@ html > body {
   background-color: #ffef6b;
 }
 
-/* 배너 1 ~ 5 */
+/* 배너 공통 디자인 */
 .banner-content-type {
   width: 100%;
   height: 720px;
 }
-.banner-content-type .con {
+.banner-content-type > .con {
   display: flex;
   height: 100%;
-  height: 100%;
 }
-.banner-content-type .con div:first-child {
+.banner-content-type > .con > div {
+  position: relative;
+}
+.banner-content-type > .con > div:first-child {
   width: 55%;
-  background-color: red;
 }
-.banner-content-type .con div:last-child {
+.banner-content-type > .con > div:last-child {
   width: 45%;
-  background-color: blue;
 }
 
 .banner-content-between-pad {
   height: 32px;
   background-color: #fafafa;
+}
+
+/* 배너 1 ~ 5 */
+.banner-content-type-1 .cont-img {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.banner-content-type-1 .cont-img img {
+  width: 473px;
+}
+.banner-content-type-1 .cont-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner-content-type-1 .cont-box .cont-text h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.banner-content-type-1 .cont-box .cont-text p {
+  margin-top: 24px;
+  opacity: 0.7;
+}
+.banner-content-type-1 .cont-box .cont-btn {
+  margin-top: 30px;
+}
+.banner-content-type-1 .cont-box .cont-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 258px;
+  height: 56px;
+  background-color: #f6f6f6;
+  color: #333;
+  border-radius: 15px;
+  gap: 0 8px;
+}
+.banner-content-type-1 .cont-box .cont-btn a:hover .cont-btn-text {
+  text-decoration: underline;
+}
+.banner-content-type-1 .cont-box .cont-btn a .cont-btn-img img {
+  width: 6px;
+  height: 9px;
+  margin-bottom: 4.5px;
 }
 
 /*# sourceMappingURL=style.css.map */
