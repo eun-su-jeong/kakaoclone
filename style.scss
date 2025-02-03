@@ -32,24 +32,55 @@ $site-width: 1080px;
 	background-size: 116px 20px;
 }
 
+@mixin outlink-icon() {
+	content: '';
+	display: inline-block;
+	background-image: url(https://www.kakaobank.com/static/images/web/svg_line_outlink.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 14px 14px;
+	width: 20px;
+	height: 20px;
+	transform: translateY(6px) translateX(3px);
+}
+
 .top-bar__menu1 {
 	margin-left: auto;
 
-	.depth1 {
-		li {
-			padding: 0 25px;
+	.icon-on {
+		&::after {
+			@include outlink-icon;
+		}
 
-			&:hover {
-				a {
-					text-decoration: underline;
+		&.ver2::after {
+			background-size: 20px 20px;
+			transform: translateY(4px) translateX(6px);
+		}
+	}
 
-					&::after {
-						display: block;
-					}
+	@mixin hoverUnderline {
+		&:hover {
+			> a {
+				text-decoration: underline;
+				&::after {
+					display: block;
 				}
 			}
 
-			a {
+			.mega-menu {
+				display: block;
+			}
+		}
+	}
+
+	// 1차메뉴
+	.depth1 {
+		> li {
+			padding: 0 25px;
+
+			@include hoverUnderline;
+
+			> a {
 				display: flex;
 				position: relative;
 				height: 100%;
@@ -69,7 +100,48 @@ $site-width: 1080px;
 			}
 		}
 	}
+
+	@mixin depth-text($text-color: #000, $font-size: 1rem) {
+		display: block;
+		font-size: $font-size;
+		text-align: center;
+		color: $text-color;
+	}
+
+	.depth2 {
+		margin: 70px 0;
+
+		> li {
+			@include hoverUnderline;
+			> a {
+				@include depth-text($font-size: 17px);
+				margin-bottom: 10px;
+				display: flex;
+				align-items: baseline;
+				justify-content: center;
+			}
+		}
+	}
+
+	.depth3 {
+		> li {
+			@include hoverUnderline;
+			> a {
+				@include depth-text(#444, 13px);
+				padding: 12px 0;
+				display: flex;
+				align-items: baseline;
+				justify-content: center;
+			}
+		}
+	}
+
 	.mega-menu {
 		display: none;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		min-height: 400px;
+		box-shadow: 0 12px 14px rgba(0, 0, 0, 0.12);
 	}
 }

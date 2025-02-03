@@ -34,23 +34,41 @@ html > body {
 .top-bar__menu1 {
   margin-left: auto;
 }
-.top-bar__menu1 .depth1 li {
+.top-bar__menu1 .icon-on::after {
+  content: "";
+  display: inline-block;
+  background-image: url(https://www.kakaobank.com/static/images/web/svg_line_outlink.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(6px) translateX(3px);
+}
+.top-bar__menu1 .icon-on.ver2::after {
+  background-size: 20px 20px;
+  transform: translateY(4px) translateX(6px);
+}
+.top-bar__menu1 .depth1 > li {
   padding: 0 25px;
 }
-.top-bar__menu1 .depth1 li:hover a {
+.top-bar__menu1 .depth1 > li:hover > a {
   text-decoration: underline;
 }
-.top-bar__menu1 .depth1 li:hover a::after {
+.top-bar__menu1 .depth1 > li:hover > a::after {
   display: block;
 }
-.top-bar__menu1 .depth1 li a {
+.top-bar__menu1 .depth1 > li:hover .mega-menu {
+  display: block;
+}
+.top-bar__menu1 .depth1 > li > a {
   display: flex;
   position: relative;
   height: 100%;
   align-items: center;
   padding: 0 10px;
 }
-.top-bar__menu1 .depth1 li a::after {
+.top-bar__menu1 .depth1 > li > a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -60,8 +78,54 @@ html > body {
   background-color: #000;
   display: none;
 }
+.top-bar__menu1 .depth2 {
+  margin: 70px 0;
+}
+.top-bar__menu1 .depth2 > li:hover > a {
+  text-decoration: underline;
+}
+.top-bar__menu1 .depth2 > li:hover > a::after {
+  display: block;
+}
+.top-bar__menu1 .depth2 > li:hover .mega-menu {
+  display: block;
+}
+.top-bar__menu1 .depth2 > li > a {
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.top-bar__menu1 .depth3 > li:hover > a {
+  text-decoration: underline;
+}
+.top-bar__menu1 .depth3 > li:hover > a::after {
+  display: block;
+}
+.top-bar__menu1 .depth3 > li:hover .mega-menu {
+  display: block;
+}
+.top-bar__menu1 .depth3 > li > a {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  color: #444;
+  padding: 12px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
 .top-bar__menu1 .mega-menu {
   display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  min-height: 400px;
+  box-shadow: 0 12px 14px rgba(0, 0, 0, 0.12);
 }
 
 /*# sourceMappingURL=style.css.map */
