@@ -23,13 +23,13 @@ $site-width: 1080px;
 /* 커스텀 */
 .top-bar {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
 
-.logo {
-	background-image: url('https://www.kakaobank.com/static/images/web/logo_black.svg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 116px 20px;
+	.logo {
+		background-image: url('https://www.kakaobank.com/static/images/web/logo_black.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 116px 20px;
+	}
 }
 
 @mixin outlink-icon() {
@@ -143,5 +143,78 @@ $site-width: 1080px;
 		width: 100%;
 		min-height: 400px;
 		box-shadow: 0 12px 14px rgba(0, 0, 0, 0.12);
+	}
+}
+
+.drop-down-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	.drop-down-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		width: 100%;
+		line-height: initial;
+		padding: 8px 20px;
+		background-color: rgba(244, 244, 244, 0.8);
+		color: rgba(68, 68, 68, 1);
+		border: 1px solid rgba(229, 229, 229, 0.8);
+		border-radius: 40px;
+		gap: 10px;
+
+		.icon-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 15px;
+			height: 15px;
+			background-image: url('https://www.kakaobank.com/static/images/web/svg_line_arrow_down.svg');
+			background-repeat: no-repeat;
+			transition: transform 0.5s;
+		}
+
+		&.active .icon-wrapper {
+			transform: rotate(180deg) translateY(3px);
+		}
+
+		&.active + .drop-down-menu {
+			opacity: 1;
+			transform: translateX(-50%) translateY(0px);
+		}
+	}
+
+	.drop-down-menu {
+		position: absolute;
+		left: 50%;
+		top: 115%;
+		transform: translateX(-50%) translateY(10px);
+		width: 240px;
+		border-radius: 6px;
+		background-color: #fff;
+		box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+		z-index: 10;
+		transition: all 0.5s;
+		opacity: 0;
+
+		li {
+			&:hover > a {
+				background-color: rgba(244, 244, 244, 0.8);
+			}
+			a {
+				display: flex;
+				align-items: center;
+				padding: 10px 24px;
+				font-size: 13px;
+
+				&::after {
+					@include outlink-icon;
+					transform: translateY(-1px) translateX(5px);
+				}
+			}
+		}
 	}
 }

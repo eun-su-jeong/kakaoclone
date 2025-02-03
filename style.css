@@ -23,8 +23,7 @@ html > body {
 .top-bar {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-.logo {
+.top-bar .logo {
   background-image: url("https://www.kakaobank.com/static/images/web/logo_black.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -126,6 +125,78 @@ html > body {
   width: 100%;
   min-height: 400px;
   box-shadow: 0 12px 14px rgba(0, 0, 0, 0.12);
+}
+
+.drop-down-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.drop-down-box .drop-down-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  line-height: initial;
+  padding: 8px 20px;
+  background-color: rgba(244, 244, 244, 0.8);
+  color: rgb(68, 68, 68);
+  border: 1px solid rgba(229, 229, 229, 0.8);
+  border-radius: 40px;
+  gap: 10px;
+}
+.drop-down-box .drop-down-btn .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  background-image: url("https://www.kakaobank.com/static/images/web/svg_line_arrow_down.svg");
+  background-repeat: no-repeat;
+  transition: transform 0.5s;
+}
+.drop-down-box .drop-down-btn.active .icon-wrapper {
+  transform: rotate(180deg) translateY(3px);
+}
+.drop-down-box .drop-down-btn.active + .drop-down-menu {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0px);
+}
+.drop-down-box .drop-down-menu {
+  position: absolute;
+  left: 50%;
+  top: 115%;
+  transform: translateX(-50%) translateY(10px);
+  width: 240px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+  z-index: 10;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.drop-down-box .drop-down-menu li:hover > a {
+  background-color: rgba(244, 244, 244, 0.8);
+}
+.drop-down-box .drop-down-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 10px 24px;
+  font-size: 13px;
+}
+.drop-down-box .drop-down-menu li a::after {
+  content: "";
+  display: inline-block;
+  background-image: url(https://www.kakaobank.com/static/images/web/svg_line_outlink.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(6px) translateX(3px);
+  transform: translateY(-1px) translateX(5px);
 }
 
 /*# sourceMappingURL=style.css.map */
