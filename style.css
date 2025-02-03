@@ -199,4 +199,21 @@ html > body {
   transform: translateY(-1px) translateX(5px);
 }
 
+.change-lang-box {
+  margin-left: 23px;
+}
+.change-lang-box .change-lang-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(https://www.kakaobank.com/static/images/web/icon_eng.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 0.2s;
+}
+.change-lang-box .change-lang-icon:hover {
+  opacity: 0.5;
+}
+
 /*# sourceMappingURL=style.css.map */
