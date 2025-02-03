@@ -358,7 +358,7 @@ $site-width: 1080px;
 
 	p {
 		margin-top: 24px;
-		opacity: 0.7;
+		color: #666;
 	}
 }
 
@@ -370,7 +370,7 @@ $site-width: 1080px;
 	height: $height;
 	background-color: #f6f6f6;
 	color: #333;
-	border-radius: 15px;
+	border-radius: 10px;
 	gap: 0 8px;
 
 	&:hover .cont-btn-text {
@@ -401,6 +401,7 @@ $site-width: 1080px;
 }
 
 /* 배너 1 ~ 5 */
+// 배너 1
 .banner-content-type-1 {
 	.cont-img {
 		position: absolute;
@@ -425,6 +426,40 @@ $site-width: 1080px;
 			a {
 				@include banner-btn;
 			}
+		}
+	}
+}
+
+// 배너 2
+.banner-content-type-2 {
+	.cont-img {
+		position: absolute;
+		top: 50%;
+		left: 60px;
+		transform: translateY(-50%);
+		img {
+			width: 409px;
+			height: 722px;
+		}
+	}
+
+	.cont-box {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		.cont-text {
+			@include cont-text;
+		}
+
+		.cont-btn {
+			margin-top: 30px;
+			a {
+				@include banner-btn($width: 158px);
+			}
+		}
+
+		.cont-sub-img img {
+			width: 440px;
 		}
 	}
 }

@@ -329,7 +329,7 @@ html > body {
 }
 .banner-content-type-1 .cont-box .cont-text p {
   margin-top: 24px;
-  opacity: 0.7;
+  color: #666;
 }
 .banner-content-type-1 .cont-box .cont-btn {
   margin-top: 30px;
@@ -342,7 +342,7 @@ html > body {
   height: 56px;
   background-color: #f6f6f6;
   color: #333;
-  border-radius: 15px;
+  border-radius: 10px;
   gap: 0 8px;
 }
 .banner-content-type-1 .cont-box .cont-btn a:hover .cont-btn-text {
@@ -352,6 +352,55 @@ html > body {
   width: 6px;
   height: 9px;
   margin-bottom: 4.5px;
+}
+
+.banner-content-type-2 .cont-img {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+}
+.banner-content-type-2 .cont-img img {
+  width: 409px;
+  height: 722px;
+}
+.banner-content-type-2 .cont-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner-content-type-2 .cont-box .cont-text h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.banner-content-type-2 .cont-box .cont-text p {
+  margin-top: 24px;
+  color: #666;
+}
+.banner-content-type-2 .cont-box .cont-btn {
+  margin-top: 30px;
+}
+.banner-content-type-2 .cont-box .cont-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 158px;
+  height: 56px;
+  background-color: #f6f6f6;
+  color: #333;
+  border-radius: 10px;
+  gap: 0 8px;
+}
+.banner-content-type-2 .cont-box .cont-btn a:hover .cont-btn-text {
+  text-decoration: underline;
+}
+.banner-content-type-2 .cont-box .cont-btn a .cont-btn-img img {
+  width: 6px;
+  height: 9px;
+  margin-bottom: 4.5px;
+}
+.banner-content-type-2 .cont-box .cont-sub-img img {
+  width: 440px;
 }
 
 /*# sourceMappingURL=style.css.map */
