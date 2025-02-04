@@ -5,9 +5,15 @@
 	font-style: normal;
 }
 
-html > body {
-	font-family: 'GmarketSansMedium';
-	text-underline-position: under;
+html {
+	overflow-x: hidden;
+
+	body {
+		font-family: 'GmarketSansMedium';
+		text-underline-position: under;
+
+		padding-bottom: 1000px; //임시
+	}
 }
 
 $site-width: 1080px;
@@ -440,6 +446,13 @@ $site-width: 1080px;
 .banner-content-type-2 {
 	.cont-img {
 		@include cont-img($left: 50px, $width: 409px, $height: 722px);
+		opacity: 0;
+		transform: translate(25%, -50%);
+		transition: transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
+		&.active {
+			opacity: 1;
+			transform: translate(0, -50%);
+		}
 	}
 
 	.cont-box {
@@ -517,6 +530,14 @@ $site-width: 1080px;
 	background: url(https://www.kakaobank.com/static/images/web/home_map.png) no-repeat -12% 50%;
 	.cont-img {
 		@include cont-img($left: 20px, $width: 408px, $height: 715px);
+		opacity: 0;
+		transform: translateY(-25%);
+		transition: opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
+
+		&.active {
+			opacity: 1;
+			transform: translateY(-50%);
+		}
 	}
 
 	.cont-box {
