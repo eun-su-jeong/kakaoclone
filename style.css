@@ -731,4 +731,78 @@ html body {
   }
 }
 
+/* 체크카드 */
+.checkcard-box .btn-box > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 258px;
+  height: 56px;
+  background-color: #f6f6f6;
+  color: #333;
+  border-radius: 10px;
+  gap: 0 8px;
+}
+.checkcard-box .btn-box > a:hover .cont-btn-text {
+  text-decoration: underline;
+}
+.checkcard-box .btn-box > a .cont-btn-img img {
+  width: 6px;
+  height: 9px;
+  margin-bottom: 4.5px;
+}
+
+.checkcard-swiper {
+  position: relative;
+}
+.checkcard-swiper .swipwe-slide:first-child {
+  margin-right: -100px;
+}
+.checkcard-swiper .swipwe-slide:nth-child(2) {
+  position: relative;
+  z-index: 1;
+}
+.checkcard-swiper .swipwe-slide:nth-child(3) {
+  margin-left: -100px;
+}
+.checkcard-swiper .swiper-btn-wrap {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.checkcard-swiper .swiper-btn-wrap .swiper-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.checkcard-swiper .swiper-btn-wrap .swiper-btn:hover {
+  opacity: 1;
+}
+.checkcard-swiper .swiper-btn-wrap .swiper-btn:first-child {
+  left: 50px;
+}
+.checkcard-swiper .swiper-btn-wrap .swiper-btn:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.kakaobank.com/static/images/web/img-left.png") no-repeat center;
+}
+.checkcard-swiper .swiper-btn-wrap .swiper-btn:last-child {
+  right: 50px;
+}
+.checkcard-swiper .swiper-btn-wrap .swiper-btn:last-child::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.kakaobank.com/static/images/web/img-right.png") no-repeat center;
+}
+
 /*# sourceMappingURL=style.css.map */

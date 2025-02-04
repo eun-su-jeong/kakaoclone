@@ -735,3 +735,74 @@ $site-width: 1080px;
 		}
 	}
 }
+
+/* 체크카드 */
+
+.checkcard-box {
+	.btn-box > a {
+		@include banner-btn;
+	}
+}
+
+.checkcard-swiper {
+	position: relative;
+
+	.swipwe-slide {
+		&:first-child {
+			margin-right: -100px;
+		}
+		&:nth-child(2) {
+			position: relative;
+			z-index: 1;
+		}
+		&:nth-child(3) {
+			margin-left: -100px;
+		}
+	}
+
+	.swiper-btn-wrap {
+		display: flex;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+
+		@mixin swiper-btn($url) {
+			content: '';
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			background: url($url) no-repeat center;
+		}
+
+		.swiper-btn {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100px;
+			height: 100px;
+			cursor: pointer;
+			opacity: 0.7;
+			// border: 1px solid red;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			&:first-child {
+				left: 50px;
+				&::after {
+					@include swiper-btn('https://www.kakaobank.com/static/images/web/img-left.png');
+				}
+			}
+
+			&:last-child {
+				right: 50px;
+
+				&::after {
+					@include swiper-btn('https://www.kakaobank.com/static/images/web/img-right.png');
+				}
+			}
+		}
+	}
+}
