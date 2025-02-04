@@ -592,5 +592,37 @@ html body {
   transition: height 0.5s;
   transition-delay: 2s;
 }
+.loan-box .sky .moon {
+  position: absolute;
+  top: 150px;
+  left: calc(50% + 400px);
+  width: 112px;
+  height: 112px;
+  overflow: hidden;
+}
+.loan-box .sky .moon.active .shadow {
+  top: -25%;
+  left: -25%;
+}
+.loan-box .sky .moon.active .base {
+  background-color: #fff;
+}
+.loan-box .sky .moon .base {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #ffdc00;
+  transition: background-color 0.5s 2.1s;
+}
+.loan-box .sky .moon .shadow {
+  position: absolute;
+  top: -87%;
+  left: -87%;
+  width: 100%;
+  height: 100%;
+  background-color: #333b58;
+  border-radius: 50%;
+  transition: top 0.5s 2.25s, left 0.5s 2.25s;
+}
 
 /*# sourceMappingURL=style.css.map */
