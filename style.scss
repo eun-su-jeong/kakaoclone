@@ -557,3 +557,33 @@ $site-width: 1080px;
 		}
 	}
 }
+
+.loan-box {
+	position: relative;
+	color: #fff;
+
+	.con {
+		position: relative;
+		z-index: 1;
+	}
+
+	&.active .blue {
+		height: 0 !important;
+	}
+
+	.sky {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #333b58;
+
+		.blue {
+			@extend .sky;
+			background-color: #559cde;
+			transition: height 0.5s;
+			transition-delay: 2s;
+		}
+	}
+}

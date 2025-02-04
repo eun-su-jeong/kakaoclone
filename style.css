@@ -568,4 +568,29 @@ html body {
   margin-bottom: 4.5px;
 }
 
+.loan-box {
+  position: relative;
+  color: #fff;
+}
+.loan-box .con {
+  position: relative;
+  z-index: 1;
+}
+.loan-box.active .blue {
+  height: 0 !important;
+}
+.loan-box .sky, .loan-box .sky .blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333b58;
+}
+.loan-box .sky .blue {
+  background-color: #559cde;
+  transition: height 0.5s;
+  transition-delay: 2s;
+}
+
 /*# sourceMappingURL=style.css.map */
