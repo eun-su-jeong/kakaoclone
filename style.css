@@ -576,6 +576,48 @@ html body {
   position: relative;
   z-index: 1;
 }
+.loan-box .con h3 {
+  padding-top: 160px;
+}
+.loan-box .con .des {
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.loan-box .con .loan-cont-btns {
+  margin-top: 24px;
+  justify-content: center;
+}
+.loan-box .con .loan-cont-btns > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 166px;
+  height: 52px;
+  background-color: #f6f6f6;
+  color: #333;
+  border-radius: 10px;
+  gap: 0 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.loan-box .con .loan-cont-btns > a:hover .cont-btn-text {
+  text-decoration: underline;
+}
+.loan-box .con .loan-cont-btns > a .cont-btn-img img {
+  width: 6px;
+  height: 9px;
+  margin-bottom: 4.5px;
+}
+.loan-box .con .loan-box-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.loan-box .con .loan-box-img img {
+  width: 429px;
+  height: 563px;
+}
 .loan-box.active .blue {
   height: 0 !important;
 }
@@ -597,15 +639,15 @@ html body {
 }
 .loan-box .sky .moon {
   position: absolute;
-  top: 150px;
-  left: calc(50% + 400px);
+  top: 200px;
+  left: calc(50% + 450px);
   width: 112px;
   height: 112px;
   overflow: hidden;
 }
 .loan-box .sky .moon.active .shadow {
-  top: -25%;
-  left: -25%;
+  top: -23%;
+  left: -23%;
   background-color: #333b58;
 }
 .loan-box .sky .moon.active .base {
