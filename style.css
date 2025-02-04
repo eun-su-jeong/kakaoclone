@@ -322,6 +322,7 @@ html > body {
 .banner-content-type-1 .cont-box {
   position: absolute;
   top: 50%;
+  left: 50px;
   transform: translateY(-50%);
 }
 .banner-content-type-1 .cont-box .cont-text h3 {
@@ -368,6 +369,7 @@ html > body {
 .banner-content-type-2 .cont-box {
   position: absolute;
   top: 50%;
+  left: 50px;
   transform: translateY(-50%);
 }
 .banner-content-type-2 .cont-box .cont-text h3 {
@@ -407,7 +409,7 @@ html > body {
 .banner-content-type-3 .cont-img {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 20px;
   transform: translateY(-50%);
 }
 .banner-content-type-3 .cont-img img {
@@ -416,6 +418,7 @@ html > body {
 }
 .banner-content-type-3 .cont-box {
   position: absolute;
+  left: 40px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -453,7 +456,7 @@ html > body {
 .banner-content-type-4 .cont-img {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: -10px;
   transform: translateY(-50%);
 }
 .banner-content-type-4 .cont-img img {
@@ -463,6 +466,7 @@ html > body {
 .banner-content-type-4 .cont-box {
   position: absolute;
   top: 50%;
+  left: 80px;
   transform: translateY(-50%);
 }
 .banner-content-type-4 .cont-box .cont-text h3 {
@@ -512,6 +516,7 @@ html > body {
 .banner-content-type-5 .cont-box {
   position: absolute;
   top: 50%;
+  left: 44px;
   transform: translateY(-50%);
 }
 .banner-content-type-5 .cont-box .cont-text h3 {
