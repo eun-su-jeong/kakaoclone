@@ -350,6 +350,17 @@ $site-width: 1080px;
 	}
 }
 
+@mixin cont-img($left: auto, $width: auto, $height: auto) {
+	position: absolute;
+	top: 50%;
+	left: $left;
+	transform: translateY(-50%);
+	img {
+		width: $width;
+		height: $height;
+	}
+}
+
 @mixin cont-text() {
 	h3 {
 		font-size: 40px;
@@ -404,13 +415,7 @@ $site-width: 1080px;
 // 배너 1
 .banner-content-type-1 {
 	.cont-img {
-		position: absolute;
-		top: 50%;
-		left: 20px;
-		transform: translateY(-50%);
-		img {
-			width: 473px;
-		}
+		@include cont-img($left: 10px, $width: 473px);
 	}
 
 	.cont-box {
@@ -433,14 +438,7 @@ $site-width: 1080px;
 // 배너 2
 .banner-content-type-2 {
 	.cont-img {
-		position: absolute;
-		top: 50%;
-		left: 60px;
-		transform: translateY(-50%);
-		img {
-			width: 409px;
-			height: 722px;
-		}
+		@include cont-img($left: 50px, $width: 409px, $height: 722px);
 	}
 
 	.cont-box {
@@ -460,6 +458,76 @@ $site-width: 1080px;
 
 		.cont-sub-img img {
 			width: 440px;
+		}
+	}
+}
+
+// 배너 3
+.banner-content-type-3 {
+	.cont-img {
+		@include cont-img($left: 10px, $width: 459px, $height: 607px);
+	}
+
+	.cont-box {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		.cont-text {
+			@include cont-text;
+		}
+
+		.cont-btn {
+			margin-top: 30px;
+			a {
+				@include banner-btn;
+			}
+		}
+	}
+}
+
+// 배너 4
+.banner-content-type-4 {
+	.cont-img {
+		@include cont-img($left: 10px, $width: 492px, $height: 408px);
+	}
+
+	.cont-box {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		.cont-text {
+			@include cont-text;
+		}
+
+		.cont-btn {
+			margin-top: 30px;
+			a {
+				@include banner-btn;
+			}
+		}
+	}
+}
+
+// 배너 5
+.banner-content-type-5 {
+	background: url(https://www.kakaobank.com/static/images/web/home_map.png) no-repeat -12% 50%;
+	.cont-img {
+		@include cont-img($left: 20px, $width: 408px, $height: 715px);
+	}
+
+	.cont-box {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		.cont-text {
+			@include cont-text;
+		}
+
+		.cont-btn {
+			margin-top: 30px;
+			a {
+				@include banner-btn;
+			}
 		}
 	}
 }

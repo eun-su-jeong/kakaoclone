@@ -312,11 +312,12 @@ html > body {
 .banner-content-type-1 .cont-img {
   position: absolute;
   top: 50%;
-  left: 20px;
+  left: 10px;
   transform: translateY(-50%);
 }
 .banner-content-type-1 .cont-img img {
   width: 473px;
+  height: auto;
 }
 .banner-content-type-1 .cont-box {
   position: absolute;
@@ -357,7 +358,7 @@ html > body {
 .banner-content-type-2 .cont-img {
   position: absolute;
   top: 50%;
-  left: 60px;
+  left: 50px;
   transform: translateY(-50%);
 }
 .banner-content-type-2 .cont-img img {
@@ -401,6 +402,147 @@ html > body {
 }
 .banner-content-type-2 .cont-box .cont-sub-img img {
   width: 440px;
+}
+
+.banner-content-type-3 .cont-img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.banner-content-type-3 .cont-img img {
+  width: 459px;
+  height: 607px;
+}
+.banner-content-type-3 .cont-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner-content-type-3 .cont-box .cont-text h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.banner-content-type-3 .cont-box .cont-text p {
+  margin-top: 24px;
+  color: #666;
+}
+.banner-content-type-3 .cont-box .cont-btn {
+  margin-top: 30px;
+}
+.banner-content-type-3 .cont-box .cont-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 258px;
+  height: 56px;
+  background-color: #f6f6f6;
+  color: #333;
+  border-radius: 10px;
+  gap: 0 8px;
+}
+.banner-content-type-3 .cont-box .cont-btn a:hover .cont-btn-text {
+  text-decoration: underline;
+}
+.banner-content-type-3 .cont-box .cont-btn a .cont-btn-img img {
+  width: 6px;
+  height: 9px;
+  margin-bottom: 4.5px;
+}
+
+.banner-content-type-4 .cont-img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.banner-content-type-4 .cont-img img {
+  width: 492px;
+  height: 408px;
+}
+.banner-content-type-4 .cont-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner-content-type-4 .cont-box .cont-text h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.banner-content-type-4 .cont-box .cont-text p {
+  margin-top: 24px;
+  color: #666;
+}
+.banner-content-type-4 .cont-box .cont-btn {
+  margin-top: 30px;
+}
+.banner-content-type-4 .cont-box .cont-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 258px;
+  height: 56px;
+  background-color: #f6f6f6;
+  color: #333;
+  border-radius: 10px;
+  gap: 0 8px;
+}
+.banner-content-type-4 .cont-box .cont-btn a:hover .cont-btn-text {
+  text-decoration: underline;
+}
+.banner-content-type-4 .cont-box .cont-btn a .cont-btn-img img {
+  width: 6px;
+  height: 9px;
+  margin-bottom: 4.5px;
+}
+
+.banner-content-type-5 {
+  background: url(https://www.kakaobank.com/static/images/web/home_map.png) no-repeat -12% 50%;
+}
+.banner-content-type-5 .cont-img {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.banner-content-type-5 .cont-img img {
+  width: 408px;
+  height: 715px;
+}
+.banner-content-type-5 .cont-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner-content-type-5 .cont-box .cont-text h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.banner-content-type-5 .cont-box .cont-text p {
+  margin-top: 24px;
+  color: #666;
+}
+.banner-content-type-5 .cont-box .cont-btn {
+  margin-top: 30px;
+}
+.banner-content-type-5 .cont-box .cont-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 258px;
+  height: 56px;
+  background-color: #f6f6f6;
+  color: #333;
+  border-radius: 10px;
+  gap: 0 8px;
+}
+.banner-content-type-5 .cont-box .cont-btn a:hover .cont-btn-text {
+  text-decoration: underline;
+}
+.banner-content-type-5 .cont-box .cont-btn a .cont-btn-img img {
+  width: 6px;
+  height: 9px;
+  margin-bottom: 4.5px;
 }
 
 /*# sourceMappingURL=style.css.map */
