@@ -357,7 +357,7 @@ html body {
 .banner-content-type-1 .cont-box .cont-btn a .cont-btn-img img {
   width: 6px;
   height: 9px;
-  margin-bottom: 4.5px;
+  margin-top: -3px;
 }
 
 .banner-content-type-2 .cont-img {
@@ -411,7 +411,7 @@ html body {
 .banner-content-type-2 .cont-box .cont-btn a .cont-btn-img img {
   width: 6px;
   height: 9px;
-  margin-bottom: 4.5px;
+  margin-top: -3px;
 }
 .banner-content-type-2 .cont-box .cont-sub-img img {
   width: 440px;
@@ -461,7 +461,7 @@ html body {
 .banner-content-type-3 .cont-box .cont-btn a .cont-btn-img img {
   width: 6px;
   height: 9px;
-  margin-bottom: 4.5px;
+  margin-top: -3px;
 }
 
 .banner-content-type-4 .cont-img {
@@ -508,7 +508,7 @@ html body {
 .banner-content-type-4 .cont-box .cont-btn a .cont-btn-img img {
   width: 6px;
   height: 9px;
-  margin-bottom: 4.5px;
+  margin-top: -3px;
 }
 
 .banner-content-type-5 {
@@ -565,7 +565,7 @@ html body {
 .banner-content-type-5 .cont-box .cont-btn a .cont-btn-img img {
   width: 6px;
   height: 9px;
-  margin-bottom: 4.5px;
+  margin-top: -3px;
 }
 
 .loan-box {
@@ -606,7 +606,7 @@ html body {
 .loan-box .con .loan-cont-btns > a .cont-btn-img img {
   width: 6px;
   height: 9px;
-  margin-bottom: 4.5px;
+  margin-top: -3px;
 }
 .loan-box .con .loan-box-img {
   position: absolute;
@@ -749,30 +749,30 @@ html body {
 .checkcard-box .btn-box > a .cont-btn-img img {
   width: 6px;
   height: 9px;
-  margin-bottom: 4.5px;
+  margin-top: -3px;
 }
 
-.checkcard-swiper {
+.checkcard-swiper-wrap {
   position: relative;
 }
-.checkcard-swiper .swipwe-slide:first-child {
-  margin-right: -100px;
+.checkcard-swiper-wrap .checkcard-swiper .swiper-slide {
+  height: auto;
+  transition: transform 0.5s;
 }
-.checkcard-swiper .swipwe-slide:nth-child(2) {
-  position: relative;
+.checkcard-swiper-wrap .checkcard-swiper .swiper-slide.swiper-slide-active {
+  transform: scale(1.2);
   z-index: 1;
 }
-.checkcard-swiper .swipwe-slide:nth-child(3) {
-  margin-left: -100px;
-}
-.checkcard-swiper .swiper-btn-wrap {
+.checkcard-swiper-wrap .swiper-btn-wrap {
   display: flex;
+  justify-content: space-between;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
+  z-index: 10;
 }
-.checkcard-swiper .swiper-btn-wrap .swiper-btn {
+.checkcard-swiper-wrap .swiper-btn-wrap .swiper-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -781,23 +781,17 @@ html body {
   cursor: pointer;
   opacity: 0.7;
 }
-.checkcard-swiper .swiper-btn-wrap .swiper-btn:hover {
+.checkcard-swiper-wrap .swiper-btn-wrap .swiper-button:hover {
   opacity: 1;
 }
-.checkcard-swiper .swiper-btn-wrap .swiper-btn:first-child {
-  left: 50px;
-}
-.checkcard-swiper .swiper-btn-wrap .swiper-btn:first-child::after {
+.checkcard-swiper-wrap .swiper-btn-wrap .swiper-button-prev::after {
   content: "";
   display: inline-block;
   width: 100%;
   height: 100%;
   background: url("https://www.kakaobank.com/static/images/web/img-left.png") no-repeat center;
 }
-.checkcard-swiper .swiper-btn-wrap .swiper-btn:last-child {
-  right: 50px;
-}
-.checkcard-swiper .swiper-btn-wrap .swiper-btn:last-child::after {
+.checkcard-swiper-wrap .swiper-btn-wrap .swiper-button-next::after {
   content: "";
   display: inline-block;
   width: 100%;

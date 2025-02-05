@@ -27,4 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const elements = document.querySelectorAll('.active-on-visible');
 	elements.forEach((element) => observer.observe(element));
+
+	const swiper = new Swiper('.checkcard-swiper', {
+		loop: true,
+		slidesPerView: 3,
+		centeredSlides: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
 });
