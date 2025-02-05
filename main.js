@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const elements = document.querySelectorAll('.active-on-visible');
 	elements.forEach((element) => observer.observe(element));
 
+	/* swiper */
 	const swiper = new Swiper('.checkcard-swiper', {
 		loop: true,
 		slidesPerView: 3,
@@ -36,5 +37,19 @@ document.addEventListener('DOMContentLoaded', () => {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
+	});
+
+	/* scroll effect */
+	const logo = document.querySelector('.logo');
+	let lastScrollTop = 0;
+
+	window.addEventListener('scroll', () => {
+		let currentScroll = window.scrollY;
+
+		if (currentScroll > lastScrollTop) {
+			logo.classList.add('active');
+		} else {
+			logo.classList.remove('active');
+		}
 	});
 });

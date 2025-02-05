@@ -25,6 +25,10 @@ html body {
 /* 커스텀 */
 /* 헤더 */
 .top-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .top-bar .logo {
@@ -32,6 +36,11 @@ html body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 116px 20px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+.top-bar .logo.active {
+  opacity: 0;
 }
 
 .top-bar__menu1 {
@@ -126,7 +135,7 @@ html body {
   display: none;
   position: absolute;
   left: 0;
-  z-index: 10;
+  transform: translateY(1px);
   width: 100%;
   min-height: 400px;
   background-color: #fff;
