@@ -35,7 +35,7 @@ $site-width: 1080px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
 	.logo {
-		background-image: url('https://www.kakaobank.com/static/images/web/logo_black.svg');
+		background-image: url('./images/logo_black.svg');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 116px 20px;
@@ -51,7 +51,7 @@ $site-width: 1080px;
 @mixin outlink-icon() {
 	content: '';
 	display: inline-block;
-	background-image: url(https://www.kakaobank.com/static/images/web/svg_line_outlink.svg);
+	background-image: url(./images/svg_line_outlink.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 14px 14px;
@@ -194,7 +194,7 @@ $site-width: 1080px;
 			justify-content: center;
 			width: 15px;
 			height: 15px;
-			background-image: url('https://www.kakaobank.com/static/images/web/svg_line_arrow_down.svg');
+			background-image: url('./images/svg_line_arrow_down.svg');
 			background-repeat: no-repeat;
 			transition: transform 0.5s;
 		}
@@ -251,7 +251,7 @@ $site-width: 1080px;
 		display: inline-block;
 		width: 24px;
 		height: 24px;
-		background-image: url(https://www.kakaobank.com/static/images/web/icon_eng.svg);
+		background-image: url(./images/icon_eng.svg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -273,7 +273,7 @@ $site-width: 1080px;
 		position: relative;
 		max-width: 1200px;
 		height: 884px;
-		background-image: url(https://www.kakaobank.com/static/images/web/renewal/main-bg3.png);
+		background-image: url(./images/main-bg3.png);
 		background-repeat: no-repeat;
 		background-size: contain;
 
@@ -313,7 +313,7 @@ $site-width: 1080px;
 
 						.store-icon {
 							display: inline-block;
-							background-image: url(https://www.kakaobank.com/static/images/web/img_kabang_220615.png);
+							background-image: url(./images/img_kabang_220615.png);
 							background-repeat: no-repeat;
 							width: 24px;
 							height: 24px;
@@ -537,7 +537,7 @@ $site-width: 1080px;
 
 // 배너 5
 .banner-content-type-5 {
-	background: url(https://www.kakaobank.com/static/images/web/home_map.png) no-repeat -12% 50%;
+	background: url(./images/home_map.png) no-repeat -12% 50%;
 	.cont-img {
 		@include cont-img($left: 20px, $width: 408px, $height: 715px);
 		opacity: 0;
@@ -809,13 +809,13 @@ $site-width: 1080px;
 			&-prev {
 				left: 100px;
 				&::after {
-					@include swiper-btn('https://www.kakaobank.com/static/images/web/img-left.png');
+					@include swiper-btn('./images/img-left.png');
 				}
 			}
 			&-next {
 				right: 100px;
 				&::after {
-					@include swiper-btn('https://www.kakaobank.com/static/images/web/img-right.png');
+					@include swiper-btn('./images/img-right.png');
 				}
 			}
 		}
@@ -906,7 +906,7 @@ $site-width: 1080px;
 				a {
 					position: relative;
 					display: block;
-					padding: 5px 12px;
+					padding: 5px 18px;
 					font-size: 11px;
 					color: #666;
 				}
@@ -921,7 +921,7 @@ $site-width: 1080px;
 					a {
 						.sns-icon {
 							display: block;
-							background-image: url(https://www.kakaobank.com/static/images/web/ico_sns.png);
+							background-image: url(./images/ico_sns.png);
 							background-repeat: no-repeat;
 							width: 24px;
 							height: 24px;

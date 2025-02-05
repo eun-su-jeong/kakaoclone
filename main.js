@@ -1,12 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-	/* 드롭다운 토글 */
+	dropDownBtn();
+	antiOverlapping();
+	intersectionObserver();
+	initSwiper();
+	scrollEffect();
+});
+
+/* 드롭다운 버튼 */
+const dropDown = () => {
 	const dropDownBtn = document.querySelector('.drop-down-btn');
+	if (dropDownBtn) return;
 
 	dropDownBtn.addEventListener('click', () => {
 		dropDownBtn.classList.toggle('active');
 	});
+};
 
-	/* menu 겹침 방지 */
+/* menu 겹침 방지 */
+const antiOverlapping = () => {
 	const menuItems = document.querySelectorAll('.top-bar__menu1 > ul > li');
 	menuItems.forEach((menu) => {
 		menu.addEventListener('mouseenter', () => {
@@ -15,8 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			dropDownBtn.classList.remove('active');
 		});
 	});
+};
 
-	/* Intersection Observer */
+/* Intersection Observer */
+const intersectionObserver = () => {
 	const options = {
 		root: null,
 		rootMargin: '0px',
@@ -37,8 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const elements = document.querySelectorAll('.active-on-visible');
 	elements.forEach((element) => observer.observe(element));
+};
 
-	/* swiper */
+/* swiper */
+const initSwiper = () => {
 	const swiper = new Swiper('.checkcard-swiper', {
 		loop: true,
 		slidesPerView: 3,
@@ -48,8 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			prevEl: '.swiper-button-prev',
 		},
 	});
+};
 
-	/* scroll effect */
+/* scroll effect */
+const scrollEffect = () => {
 	const logo = document.querySelector('.logo');
 	let lastScrollTop = 0;
 
@@ -62,4 +79,4 @@ document.addEventListener('DOMContentLoaded', () => {
 			logo.classList.remove('active');
 		}
 	});
-});
+};

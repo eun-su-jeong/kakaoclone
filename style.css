@@ -32,7 +32,7 @@ html body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .top-bar .logo {
-  background-image: url("https://www.kakaobank.com/static/images/web/logo_black.svg");
+  background-image: url("./images/logo_black.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 116px 20px;
@@ -49,7 +49,7 @@ html body {
 .top-bar__menu1 .icon-on::after {
   content: "";
   display: inline-block;
-  background-image: url(https://www.kakaobank.com/static/images/web/svg_line_outlink.svg);
+  background-image: url(./images/svg_line_outlink.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 14px 14px;
@@ -168,7 +168,7 @@ html body {
   justify-content: center;
   width: 15px;
   height: 15px;
-  background-image: url("https://www.kakaobank.com/static/images/web/svg_line_arrow_down.svg");
+  background-image: url("./images/svg_line_arrow_down.svg");
   background-repeat: no-repeat;
   transition: transform 0.5s;
 }
@@ -206,7 +206,7 @@ html body {
 .drop-down-box .drop-down-menu li a::after {
   content: "";
   display: inline-block;
-  background-image: url(https://www.kakaobank.com/static/images/web/svg_line_outlink.svg);
+  background-image: url(./images/svg_line_outlink.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 14px 14px;
@@ -223,7 +223,7 @@ html body {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url(https://www.kakaobank.com/static/images/web/icon_eng.svg);
+  background-image: url(./images/icon_eng.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -241,7 +241,7 @@ html body {
   position: relative;
   max-width: 1200px;
   height: 884px;
-  background-image: url(https://www.kakaobank.com/static/images/web/renewal/main-bg3.png);
+  background-image: url(./images/main-bg3.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -277,7 +277,7 @@ html body {
 }
 .main-banner-box .banner-main-content .text-box .link-store li a .store-icon {
   display: inline-block;
-  background-image: url(https://www.kakaobank.com/static/images/web/img_kabang_220615.png);
+  background-image: url(./images/img_kabang_220615.png);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -522,7 +522,7 @@ html body {
 }
 
 .banner-content-type-5 {
-  background: url(https://www.kakaobank.com/static/images/web/home_map.png) no-repeat -12% 50%;
+  background: url(./images/home_map.png) no-repeat -12% 50%;
 }
 .banner-content-type-5 .cont-img {
   position: absolute;
@@ -808,7 +808,7 @@ html body {
   display: inline-block;
   width: 100%;
   height: 100%;
-  background: url("https://www.kakaobank.com/static/images/web/img-left.png") no-repeat center;
+  background: url("./images/img-left.png") no-repeat center;
 }
 .checkcard-swiper-wrap .swiper-btn-wrap .swiper-button-next {
   right: 100px;
@@ -818,7 +818,7 @@ html body {
   display: inline-block;
   width: 100%;
   height: 100%;
-  background: url("https://www.kakaobank.com/static/images/web/img-right.png") no-repeat center;
+  background: url("./images/img-right.png") no-repeat center;
 }
 
 /* it */
@@ -893,13 +893,13 @@ html body {
 .footer-bar .info-menu ul li a {
   position: relative;
   display: block;
-  padding: 5px 12px;
+  padding: 5px 18px;
   font-size: 11px;
   color: #666;
 }
 .footer-bar .footer-bottom .sns-list-box ul li a .sns-icon {
   display: block;
-  background-image: url(https://www.kakaobank.com/static/images/web/ico_sns.png);
+  background-image: url(./images/ico_sns.png);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
