@@ -177,6 +177,7 @@ html body {
 }
 .drop-down-box .drop-down-btn.active + .drop-down-menu {
   opacity: 1;
+  visibility: visible;
   transform: translateX(-50%) translateY(0px);
 }
 .drop-down-box .drop-down-menu {
@@ -191,6 +192,7 @@ html body {
   z-index: 10;
   transition: all 0.5s;
   opacity: 0;
+  visibility: hidden;
 }
 .drop-down-box .drop-down-menu li:hover > a {
   background-color: rgba(244, 244, 244, 0.8);

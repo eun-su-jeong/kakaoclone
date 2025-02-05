@@ -205,6 +205,7 @@ $site-width: 1080px;
 
 		&.active + .drop-down-menu {
 			opacity: 1;
+			visibility: visible;
 			transform: translateX(-50%) translateY(0px);
 		}
 	}
@@ -221,6 +222,7 @@ $site-width: 1080px;
 		z-index: 10;
 		transition: all 0.5s;
 		opacity: 0;
+		visibility: hidden;
 
 		li {
 			&:hover > a {
