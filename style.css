@@ -763,6 +763,12 @@ html body {
   transform: scale(1.2);
   z-index: 1;
 }
+.checkcard-swiper-wrap .checkcard-swiper .swiper-slide.swiper-slide-prev {
+  left: 60px;
+}
+.checkcard-swiper-wrap .checkcard-swiper .swiper-slide.swiper-slide-next {
+  right: 60px;
+}
 .checkcard-swiper-wrap .swiper-btn-wrap {
   display: flex;
   justify-content: space-between;
@@ -784,12 +790,18 @@ html body {
 .checkcard-swiper-wrap .swiper-btn-wrap .swiper-button:hover {
   opacity: 1;
 }
+.checkcard-swiper-wrap .swiper-btn-wrap .swiper-button-prev {
+  left: 100px;
+}
 .checkcard-swiper-wrap .swiper-btn-wrap .swiper-button-prev::after {
   content: "";
   display: inline-block;
   width: 100%;
   height: 100%;
   background: url("https://www.kakaobank.com/static/images/web/img-left.png") no-repeat center;
+}
+.checkcard-swiper-wrap .swiper-btn-wrap .swiper-button-next {
+  right: 100px;
 }
 .checkcard-swiper-wrap .swiper-btn-wrap .swiper-button-next::after {
   content: "";

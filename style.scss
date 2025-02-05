@@ -756,6 +756,14 @@ $site-width: 1080px;
 				transform: scale(1.2);
 				z-index: 1;
 			}
+
+			&.swiper-slide-prev {
+				left: 60px;
+			}
+
+			&.swiper-slide-next {
+				right: 60px;
+			}
 		}
 	}
 	.swiper-btn-wrap {
@@ -789,12 +797,16 @@ $site-width: 1080px;
 			}
 
 			&-prev {
+				left: 100px;
 				&::after {
 					@include swiper-btn('https://www.kakaobank.com/static/images/web/img-left.png');
 				}
 			}
-			&-next::after {
-				@include swiper-btn('https://www.kakaobank.com/static/images/web/img-right.png');
+			&-next {
+				right: 100px;
+				&::after {
+					@include swiper-btn('https://www.kakaobank.com/static/images/web/img-right.png');
+				}
 			}
 		}
 	}
