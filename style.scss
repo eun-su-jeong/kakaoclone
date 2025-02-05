@@ -11,8 +11,6 @@ html {
 	body {
 		font-family: 'GmarketSansMedium';
 		text-underline-position: under;
-
-		padding-bottom: 1000px; //임시
 	}
 }
 
@@ -864,6 +862,79 @@ $site-width: 1080px;
 		p {
 			font-size: 14px;
 			color: #666;
+		}
+	}
+}
+
+.footer-bar {
+	padding: 30px 0;
+	background-color: #eee;
+
+	.info-menu {
+		ul {
+			li {
+				&:hover > a {
+					text-decoration: underline;
+				}
+
+				&:not(:nth-last-child(4), :last-child) {
+					a::after {
+						content: '';
+						display: inline-block;
+						position: absolute;
+						right: 0;
+						top: 50%;
+						transform: translateY(-60%);
+						background-color: #d8d8d8;
+						width: 1px;
+						height: 12px;
+					}
+				}
+
+				a {
+					position: relative;
+					display: block;
+					padding: 5px 12px;
+					font-size: 11px;
+					color: #666;
+				}
+			}
+		}
+	}
+
+	.footer-bottom {
+		.sns-list-box {
+			ul {
+				li {
+					a {
+						.sns-icon {
+							display: block;
+							background-image: url(https://www.kakaobank.com/static/images/web/ico_sns.png);
+							background-repeat: no-repeat;
+							width: 24px;
+							height: 24px;
+							margin-left: 13px;
+						}
+
+						.icon-facebook {
+							background-position: 0 -90px;
+						}
+
+						.icon-instagram {
+							background-position: -191px -138px;
+							margin-left: 4px;
+						}
+
+						.icon-youtube {
+							background-position: -90px -90px;
+						}
+
+						.icon-brundch {
+							background-position: -217px -138px;
+						}
+					}
+				}
+			}
 		}
 	}
 }
