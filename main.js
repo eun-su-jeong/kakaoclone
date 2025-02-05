@@ -1,15 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-	dropDownBtn();
-	antiOverlapping();
-	intersectionObserver();
-	initSwiper();
-	scrollEffect();
+	requestIdleCallback(() => {
+		dropDown();
+		antiOverlapping();
+		intersectionObserver();
+		initSwiper();
+		scrollEffect();
+	});
 });
 
 /* 드롭다운 버튼 */
 const dropDown = () => {
 	const dropDownBtn = document.querySelector('.drop-down-btn');
-	if (dropDownBtn) return;
+	if (!dropDownBtn) return;
 
 	dropDownBtn.addEventListener('click', () => {
 		dropDownBtn.classList.toggle('active');
@@ -54,15 +56,20 @@ const intersectionObserver = () => {
 
 /* swiper */
 const initSwiper = () => {
-	const swiper = new Swiper('.checkcard-swiper', {
-		loop: true,
-		slidesPerView: 3,
-		centeredSlides: true,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-	});
+	const swiperContainer = document.querySelector('.checkcard-swiper');
+	if (!swiperContainer) return;
+
+	if (!swiperContainer.swiper) {
+		new Swiper('.checkcard-swiper', {
+			loop: true,
+			slidesPerView: 3,
+			centeredSlides: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	}
 };
 
 /* scroll effect */
