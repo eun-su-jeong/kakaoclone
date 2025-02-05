@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		dropDownBtn.classList.toggle('active');
 	});
 
+	/* menu 겹침 방지 */
+	const menuItems = document.querySelectorAll('.top-bar__menu1 > ul > li');
+	menuItems.forEach((menu) => {
+		menu.addEventListener('mouseenter', () => {
+			const dropDownBtn = document.querySelector('.drop-down-btn');
+
+			dropDownBtn.classList.remove('active');
+		});
+	});
+
 	/* Intersection Observer */
 	const options = {
 		root: null,
